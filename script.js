@@ -477,7 +477,7 @@ treatForm.addEventListener("submit", async (event) => {
 
     phone: phone,
 
-    location: location
+    address: location
 
   };
 
@@ -550,4 +550,4 @@ treatForm.addEventListener("submit", async (event) => {
 
   }
 
-});
+})
