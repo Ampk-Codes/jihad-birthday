@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090014">
+  <title>For Jihad — Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles"></div>
+
+  <main>
+    <!-- 1. OPENING -->
+    <section id="opening" class="screen active">
+      <div class="glow orb-a"></div>
+      <div class="glow orb-b"></div>
+      <div class="opening-content">
+        <p class="eyebrow">A little surprise...</p>
+        <h1>Hey...<br><span>It's Mehedi here.</span></h1>
+        <p class="sub">Something just for you.</p>
+        <button id="openBtn" class="primary-btn">OPEN SURPRISE <span>🎁</span></button>
+      </div>
+    </section>
+
+    <!-- 2. CINEMATIC REVEAL -->
+    <section id="reveal" class="screen">
+      <div class="reveal-content">
+        <p class="tiny">TODAY IS YOUR DAY</p>
+        <h2>HAPPY BIRTHDAY</h2>
+        <h3>JIHAD, MY BEST BUDDY</h3>
+        <div class="birthday-symbol">✦</div>
+        <p class="reveal-line">Some people become a beautiful part of our story.</p>
+        <button class="ghost-btn next-btn" data-next="letterSection">Continue ↓</button>
+      </div>
+    </section>
+
+    <!-- 3. LETTER -->
+    <section id="letterSection" class="screen">
+      <div class="section-inner">
+        <p class="section-label">A LETTER FOR YOU</p>
+        <h2 class="section-title">There’s something I wanted to say...</h2>
+
+        <div class="envelope-wrap" id="envelope">
+          <div class="envelope">
+            <div class="flap"></div>
+            <div class="heart" aria-label="Open letter">❤️</div>
+            <div class="envelope-paper"></div>
+          </div>
+          <p class="tap-hint">❤️ Click the heart</p>
+        </div>
+
+        <article id="letter" class="letter-card">
+          <div class="letter-top">For Jihad, with love ❤️</div>
+          <div class="letter-text">
+            <p>কিছু মানুষ জীবনে আসে, আর ধীরে ধীরে তারা আমাদের গল্পের একটা গুরুত্বপূর্ণ অংশ হয়ে যায়। সেটা যে কেউ হতে পারে যেকোনো ভাবে৷ আর আমার জীবনে সেরকম একজন তুই।</p>
+            <p>তোর সাথে দেখা হওয়ার পর কতগুলো বছর কেটে গেলো কখনো এমন মনে হয় নাই যে তুই আমার জীবনের কল্পনায় নাই। জানি না এগুলো কেনো বলতেছি হয়তো আমরা বড় হচ্ছি।</p>
+            <p>বন্ধু আমি কিছু ভুল বললেও কিছু মনে করিস না। অনেক কথা এমন আছে যেগুলো কেনো যেনো আজকাল বলতে চেয়েও বলা হচ্ছে না তার মধ্যে একটা হচ্ছে বন্ধু আমরা তোকে অনেক ভালোবাসি।</p>
+            <p>তুই আমাদের জীবনের একটা সুন্দর অংশ যেটা আমরা সুন্দরতম হওয়ার আশা দেখায়। এজন্য প্লিজ নিজের যত্ন নিয়ে <strong>Give your self a last dance buddy 🙏❤️</strong> একথায় তুই অলরেডি বুঝছোস আমি কি বলতেছি।</p>
+            <p>তাই আর কিছু না বলি। জন্মদিনের অনেক শুভেচ্ছা।</p>
+            <p class="treat">হারামজাদা Treat kobe dibi 😂</p>
+          </div>
+          <div class="signature">— Mehedi</div>
+        </article>
+
+        <button class="ghost-btn next-btn hidden-after-letter" data-next="hiddenSection">There’s more... →</button>
+      </div>
+    </section>
+
+    <!-- 4. HIDDEN MESSAGE -->
+    <section id="hiddenSection" class="screen">
+      <div class="section-inner">
+        <p class="section-label">SECRET ZONE</p>
+        <h2 class="section-title">You thought that was all?</h2>
+
+        <div class="secret-buttons">
+          <button class="secret-btn" data-message="তোর জন্য একটা কথা সবসময় মনে রাখিস — তুই যতটা ভাবিস, তার চেয়েও বেশি valuable একজন মানুষ। ❤️">Click me 👀</button>
+          <button class="secret-btn" data-message="One more thing... বড় হ, সফল হ, কিন্তু আমাদের সাথে পাগলামি করাটা যেনো বন্ধ না হয়। 😂">One more thing...</button>
+          <button class="secret-btn" data-message="You didn't think that was all, did you? 😏">You didn't think that was all, did you?</button>
+        </div>
+
+        <div id="secretMessage" class="secret-message"></div>
+        <button class="ghost-btn next-btn after-secret" data-next="wishSection">One last thing →</button>
+      </div>
+    </section>
+
+    <!-- 5. WISH -->
+    <section id="wishSection" class="screen">
+      <div class="section-inner">
+        <p class="section-label">ONE LAST WISH</p>
+        <h2 class="section-title">Things I wish for you</h2>
+        <div class="wish-card">
+          <div class="wish-icon">🌙</div>
+          <h3>একটা দ্বীনদার Katrina 😭❤️</h3>
+          <p>আর তার সাথে শান্তি, বরকত, সফলতা আর সুন্দর একটা জীবন।</p>
+        </div>
+        <button class="primary-btn next-btn" data-next="finalSection">FINAL SURPRISE 🎁</button>
+      </div>
+    </section>
+
+    <!-- 6. FINAL -->
+    <section id="finalSection" class="screen final-screen">
+      <div id="fireworks"></div>
+      <div class="final-content">
+        <div class="final-small">WOW! It's Your</div>
+        <div class="final-big">পয়দা দিবস</div>
+        <div class="final-emoji">🎂✨🎉</div>
+        <p>Happy Birthday, Jihad ❤️</p>
+        <p class="final-note">Stay blessed. Stay happy. Stay my best buddy.</p>
+        <button id="replayBtn" class="ghost-btn">Replay the surprise ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
