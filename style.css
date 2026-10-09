@@ -752,3 +752,13 @@ button{
   }
 
 }
+
+wish-image {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 18px;
+  object-fit: contain;
+}
